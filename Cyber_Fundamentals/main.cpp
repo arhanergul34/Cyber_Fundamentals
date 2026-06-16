@@ -4,7 +4,7 @@
  * @details This project analyzes variable allocation on the Stack, byte sizes,
  * and hexadecimal physical memory addresses for cyber security fundamentals.
  */
-
+ /*
 #include <iostream>
 
 int main() {
@@ -24,3 +24,4 @@ int main() {
 	return 0;
 
 }
+*/
