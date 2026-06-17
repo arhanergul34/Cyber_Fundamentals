@@ -5,6 +5,7 @@
  * exceeds its maximum allocated limit, causing a critical security vulnerability.
  */
 
+/**
 #include <iostream>
 
 int main() {
@@ -26,3 +27,4 @@ int main() {
 
 	return 0;
 }
+/**/

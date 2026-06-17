@@ -24,5 +24,8 @@
     <ClCompile Include="README.md">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="pointer_anatomy.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
