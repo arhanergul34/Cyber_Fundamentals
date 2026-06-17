@@ -27,5 +27,8 @@
     <ClCompile Include="pointer_anatomy.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="secure_logic.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
