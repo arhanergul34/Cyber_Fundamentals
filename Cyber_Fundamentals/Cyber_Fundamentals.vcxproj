@@ -139,6 +139,7 @@
     </Manifest>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="infinite_dos.cpp" />
     <ClCompile Include="integer_overflow.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="pointer_anatomy.cpp" />

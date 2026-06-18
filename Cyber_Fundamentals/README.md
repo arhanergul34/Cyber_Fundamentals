@@ -13,3 +13,6 @@ I have successfully simulated a basic memory manipulation exploit. By creating a
 
 ## 🎯 Step 4: Logic Vulnerability & Input Validation (`secure_logic.cpp`)
 I have simulated a critical Business Logic Flaw commonly found in poorly validated financial applications. By inputting a negative withdrawal amount (`-200`), the system's simple boundary check (`withdraw_amount > user_balance`) was bypassed. Due to signed arithmetic rules, subtracting a negative number resulted in an unintended balance addition ($500 - (-200) = 700$), successfully exploiting the application logic without triggering system crashes.
+
+## 🎯 Step 5: Loop Structures & Local Denial of Service (DoS) Simulation (`infinite_dos.cpp`)
+I have successfully simulated a code-level Denial of Service (DoS) vulnerability via resource exhaustion. By manipulating the exit criteria of a conditional loop (`while`), the counter was inverted to increment indefinitely (`counter++`). Since the loop boundary condition (`counter > 0`) mathematically remains permanently true, it forces the CPU into an infinite operational state, consuming local thread processing resources. A defensive control flow logic (`break`) was implemented as a safety circuit breaker to intercept the attack once boundaries were exceeded.
