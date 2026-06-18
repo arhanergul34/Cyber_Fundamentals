@@ -5,7 +5,7 @@
  * to an infinite loop, causing a local Denial of Service (DoS) by exhausting CPU resources.
  * */
 
-#include <iostream>
+ /** #include <iostream>
 
 int main() {
 	// 1. Simulation of a network packet counter or a login attempt rate limiter
@@ -41,3 +41,4 @@ int main() {
 	}
 			
 }
+*/

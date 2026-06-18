@@ -139,6 +139,7 @@
     </Manifest>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="array_overflow.cpp" />
     <ClCompile Include="infinite_dos.cpp" />
     <ClCompile Include="integer_overflow.cpp" />
     <ClCompile Include="main.cpp" />

@@ -16,3 +16,6 @@ I have simulated a critical Business Logic Flaw commonly found in poorly validat
 
 ## 🎯 Step 5: Loop Structures & Local Denial of Service (DoS) Simulation (`infinite_dos.cpp`)
 I have successfully simulated a code-level Denial of Service (DoS) vulnerability via resource exhaustion. By manipulating the exit criteria of a conditional loop (`while`), the counter was inverted to increment indefinitely (`counter++`). Since the loop boundary condition (`counter > 0`) mathematically remains permanently true, it forces the CPU into an infinite operational state, consuming local thread processing resources. A defensive control flow logic (`break`) was implemented as a safety circuit breaker to intercept the attack once boundaries were exceeded.
+
+## 🎯 Step 6: Memory Boundaries & Out-of-Bounds Read Simulation (`array_overflow.cpp`)
+I have simulated a foundational memory corruption vulnerability: Out-of-Bounds Read (Memory Leak). In C++, arrays do not have native bounds checking. By requesting an invalid index (`index 3`) on a 3-element array, the compiler successfully fetched data from the neighboring unallocated memory location in RAM instead of throwing an index error. This demonstrates how improper input validation at the memory layer can lead to sensitive data exposure or serve as a baseline for Buffer Overflow exploits.
