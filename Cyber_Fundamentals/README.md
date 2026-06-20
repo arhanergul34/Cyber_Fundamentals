@@ -19,3 +19,6 @@ I have successfully simulated a code-level Denial of Service (DoS) vulnerability
 
 ## 🎯 Step 6: Memory Boundaries & Out-of-Bounds Read Simulation (`array_overflow.cpp`)
 I have simulated a foundational memory corruption vulnerability: Out-of-Bounds Read (Memory Leak). In C++, arrays do not have native bounds checking. By requesting an invalid index (`index 3`) on a 3-element array, the compiler successfully fetched data from the neighboring unallocated memory location in RAM instead of throwing an index error. This demonstrates how improper input validation at the memory layer can lead to sensitive data exposure or serve as a baseline for Buffer Overflow exploits.
+
+## 🎯 Step 7: Functions & Stack Memory Architecture (`function_stack.cpp`)
+I have implemented structural code modularity using functions and analyzed the mechanics of Stack Memory frames. In C++, when a function is invoked, a temporary Stack Frame is allocated in memory to manage local parameters and variables. Upon function termination, this frame is implicitly popped (deallocated) from the RAM stack, returning execution flow to the main thread via the stored return address. Understanding this layout serves as the absolute baseline for studying Stack Smashing vulnerabilities and control-flow hijack attacks.

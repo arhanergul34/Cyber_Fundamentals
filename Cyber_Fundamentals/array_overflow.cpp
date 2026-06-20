@@ -5,6 +5,8 @@
  * leading to critical memory leaks or memory corruption (Buffer Overflow foundations).
  * */
 
+ /**
+
 #include <iostream>
 
 int main() {
@@ -38,3 +40,5 @@ int main() {
 	return 0;
 
 }
+
+ * */

@@ -36,5 +36,8 @@
     <ClCompile Include="array_overflow.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="function_stack.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
