@@ -5,6 +5,7 @@
  * are allocated inside the Stack memory frame.
  * */
 
+ /**
 #include <iostream>
  // 1. AN AUTHENTICATION FUNCTION (Function Definition)
  // When this function is called, a temporary "Stack Frame" is created in RAM.
@@ -39,3 +40,4 @@ int main() {
 	std::cout << "=== SYSTEM TERMINATED CLEANLY ===" << std::endl;
 	return 0;
 }
+ * */

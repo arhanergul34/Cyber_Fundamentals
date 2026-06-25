@@ -144,6 +144,7 @@
     <ClCompile Include="infinite_dos.cpp" />
     <ClCompile Include="integer_overflow.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="param_manipulation.cpp" />
     <ClCompile Include="pointer_anatomy.cpp" />
     <ClCompile Include="README.md">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>

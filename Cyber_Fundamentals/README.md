@@ -22,3 +22,6 @@ I have simulated a foundational memory corruption vulnerability: Out-of-Bounds R
 
 ## 🎯 Step 7: Functions & Stack Memory Architecture (`function_stack.cpp`)
 I have implemented structural code modularity using functions and analyzed the mechanics of Stack Memory frames. In C++, when a function is invoked, a temporary Stack Frame is allocated in memory to manage local parameters and variables. Upon function termination, this frame is implicitly popped (deallocated) from the RAM stack, returning execution flow to the main thread via the stored return address. Understanding this layout serves as the absolute baseline for studying Stack Smashing vulnerabilities and control-flow hijack attacks.
+
+## 🎯 Step 8: Function Parameters & Memory Manipulation (`param_manipulation.cpp`)
+I have analyzed the security and architectural differences between Pass-by-Value and Pass-by-Reference in C++. Pass-by-Value creates an isolated copy of the data in memory, preventing the function from modifying the original state. Conversely, Pass-by-Reference (`&`) exposes the exact memory address of the variable to the function. This project simulates a parameter manipulation attack scenario, showing how unsafe reference mapping can allow functions to directly overwrite core system registers (`SYSTEM_SECURITY_LEVEL` compromised from 5 to 0).
