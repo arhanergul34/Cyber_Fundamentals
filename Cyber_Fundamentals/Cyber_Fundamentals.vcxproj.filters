@@ -45,5 +45,8 @@
     <ClCompile Include="crypto_basics.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="use_after_free.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
