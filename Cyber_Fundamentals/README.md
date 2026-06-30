@@ -25,3 +25,6 @@ I have implemented structural code modularity using functions and analyzed the m
 
 ## 🎯 Step 8: Function Parameters & Memory Manipulation (`param_manipulation.cpp`)
 I have analyzed the security and architectural differences between Pass-by-Value and Pass-by-Reference in C++. Pass-by-Value creates an isolated copy of the data in memory, preventing the function from modifying the original state. Conversely, Pass-by-Reference (`&`) exposes the exact memory address of the variable to the function. This project simulates a parameter manipulation attack scenario, showing how unsafe reference mapping can allow functions to directly overwrite core system registers (`SYSTEM_SECURITY_LEVEL` compromised from 5 to 0).
+
+## 🎯 Step 9: Cryptography Foundations & Data Obfuscation (`crypto_basics.cpp`)
+I have implemented a baseline cryptographic simulation using the Caesar Cipher algorithm to demonstrate data obfuscation. In C++, characters (`char`) are fundamentally mapped to numerical values in RAM via the ASCII encoding standard. By utilizing a type-casting directive `(int)`, I extracted the raw memory representation of characters. Through a bounded conditional loop (`for`), the application programmatically manipulates memory by adding a shift-key to text indices, effectively masking sensitive data payloads before simulation of external transmission.

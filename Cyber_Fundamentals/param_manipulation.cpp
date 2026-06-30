@@ -5,6 +5,7 @@
  * and Pass-by-Reference, and how reference parameters can lead to unintended memory manipulation.
  * */
 
+ /**
 #include <iostream>
 
  // 1. PASS BY VALUE (Passing by Copying – Safe Quarantine)
@@ -42,3 +43,4 @@ int main() {
 
 	return 0;
 }
+* */

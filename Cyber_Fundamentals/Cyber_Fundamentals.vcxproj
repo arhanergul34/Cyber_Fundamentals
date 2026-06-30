@@ -140,6 +140,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="array_overflow.cpp" />
+    <ClCompile Include="crypto_basics.cpp" />
     <ClCompile Include="function_stack.cpp" />
     <ClCompile Include="infinite_dos.cpp" />
     <ClCompile Include="integer_overflow.cpp" />
