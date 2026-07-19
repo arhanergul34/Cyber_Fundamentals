@@ -31,3 +31,14 @@ I have implemented a baseline cryptographic simulation using the Caesar Cipher a
 
 ## 🎯 Step 10: Dynamic Memory & Use-After-Free (UAF) Simulation (`use_after_free.cpp`)
 I have simulated a critical memory corruption vulnerability known as Use-After-Free (UAF). In C++, deallocating memory via `delete` frees the resource but leaves the pointer holding the historical RAM address, creating a "Dangling Pointer". By attempting to access this deallocated memory boundary, the simulation successfully triggered a hardware-level `0xc0000005 (Access Violation)` exception enforced by the Windows operating system memory protection layer. This laboratory workflow validates the absolute necessity of pointer nullification (`nullptr`) in defensive secure coding.
+
+## 🎯 Step 11: Stack-Based Buffer Overflow & Compiler Defenses (`buffer_overflow.cpp`)
+I have investigated the behavioral mechanics of a stack-based buffer overflow vulnerability and modern compiler mitigation strategies through a two-phase hands-on laboratory simulation:
+
+### 🧪 Experimental Workflow & Results:
+1. **Normal Input Test (`arhan`):** Entered a standard 5-character string. The static bounded buffer (`char[8]`) safely held the data, and the adjacent status register (`isAuthenticated`) remained undisturbed at `0`, resulting in a legitimate `Access Denied`.
+2. **Boundary Test (`aaaaaaaa`):** Entered exactly 8 characters to fill the allocation limit. Due to structural memory alignment (padding) applied by the CPU/compiler, the boundary was not breached, and `isAuthenticated` remained `0`.
+3. **Massive Payload Injection Test (`a...a`):** Injected a massive sequential stream of characters (over 100+ bytes) directly into the console to forcefully overflow the buffer and overwrite adjacent memory components. 
+
+### 🛡️ Analytical Conclusion:
+Despite the severe payload size, the application successfully isolated the critical conditional primitive (`isAuthenticated = 0`), and the system did not crash. This operational outcome directly proves the execution of modern compiler defenses—specifically MSVC's **Automatic Stack Reordering** and **Buffer Security Check (`/GS`)**. The compiler programmatically restructured the memory map by pushing critical primitives out of the payload trajectory, showcasing how modern development environments neutralize legacy memory exploitation vectors at runtime.

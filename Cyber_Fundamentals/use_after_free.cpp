@@ -5,6 +5,7 @@
  * creates a Dangling Pointer, leading to Use-After-Free (UAF) vulnerabilities.
  * */
 
+ /**
 #include <iostream>
 
 int main() {
@@ -39,3 +40,5 @@ int main() {
 
     return 0;
 }
+
+*/
