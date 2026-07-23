@@ -5,6 +5,7 @@
  * and how altering function pointers changes the execution flow of an application.
  * */
 
+ /**
 #include <iostream>
 
  // 1. Normal User Authorization Function in the System
@@ -46,5 +47,7 @@ int main() {
 	std::cout << "------------------------------------------------" << std::endl;
 	return 0;
 }
+
+*/
 
 
