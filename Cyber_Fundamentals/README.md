@@ -48,3 +48,12 @@ I have analyzed dynamic execution flows and runtime control flow hijacking using
 
 ## 🎯 Step 13: Modern Secure C++ & RAII Mechanics (`smart_pointers.cpp`)
 I have implemented modern memory safety primitives utilizing `std::unique_ptr` and the RAII (Resource Acquisition Is Initialization) pattern to prevent memory leaks and Use-After-Free (UAF) vulnerabilities. By scoping the object inside a deterministic local block (`{}`), I demonstrated how C++ automatically invokes the destructor (`~SecureSession`) and frees heap memory upon scope exit. This approach completely eliminates manual memory management pitfalls (`new`/`delete`) and ensures exception-safe resource lifecycle handling.
+
+## 🎯 Step 14: OOP, Polymorphism & Virtual Method Tables (`oop_polymorphism.cpp`)
+I have implemented a modular, object-oriented security framework to analyze dynamic method dispatch and runtime polymorphism in C++. Using a base class `SecurityModule` with `virtual` functions and derived subclasses (`FirewallModule`, `AntivirusModule`), I demonstrated how the compiler handles dynamic behaviors at runtime via `std::unique_ptr` and scope-bound RAII.
+
+### 🔑 Key Concepts Covered:
+* **Polymorphism & Dynamic Dispatch:** Enforced dynamic function binding at runtime using the `virtual` keyword and class inheritance (`public SecurityModule`).
+* **Virtual Method Table (`vtable`) Mechanics:** Analyzed how C++ manages memory address pointers (`vptr`) internally to resolve method addresses dynamically.
+* **Reversing & Exploitation Context:** Established foundational concepts for understanding `vtable` hijacking vulnerabilities, memory alignment, and reverse engineering binary call structures in disassemblers.
+* **Safe Resource Management:** Leveraged `std::unique_ptr` to ensure exception-safe heap memory allocation and automatic cleanup without explicit `delete` statements.

@@ -5,6 +5,7 @@
  * to eliminate Use-After-Free vulnerabilities and memory leaks automatically (RAII).
  * */
 
+ /**
 #include <iostream>
 #include <memory> // It is mandatory for smart pointers (std::unique_ptr).
 
@@ -45,4 +46,6 @@ int main() {
 
 	return 0;
 }
+
+*/
 
