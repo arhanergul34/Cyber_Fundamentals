@@ -155,6 +155,7 @@
     </ClCompile>
     <ClCompile Include="secure_logic.cpp" />
     <ClCompile Include="smart_pointers.cpp" />
+    <ClCompile Include="stl_templates.cpp" />
     <ClCompile Include="use_after_free.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

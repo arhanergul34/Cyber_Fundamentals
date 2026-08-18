@@ -57,3 +57,12 @@ I have implemented a modular, object-oriented security framework to analyze dyna
 * **Virtual Method Table (`vtable`) Mechanics:** Analyzed how C++ manages memory address pointers (`vptr`) internally to resolve method addresses dynamically.
 * **Reversing & Exploitation Context:** Established foundational concepts for understanding `vtable` hijacking vulnerabilities, memory alignment, and reverse engineering binary call structures in disassemblers.
 * **Safe Resource Management:** Leveraged `std::unique_ptr` to ensure exception-safe heap memory allocation and automatic cleanup without explicit `delete` statements.
+
+## 🎯 Step 15: Standard Template Library (STL) & Generic Programming (`stl_templates.cpp`)
+I implemented a dynamic, generic packet buffering mechanism to analyze memory-safe data structures and template metaprogramming concepts in Modern C++. Using `std::vector` and C++ templates (`template <typename T>`), I built a type-agnostic container capable of storing diverse payload types (such as network strings or port scan integers) without code duplication or manual memory management risks.
+
+### 🔑 Key Concepts Covered:
+* **Generic Programming (`template <typename T>`):** Designed type-independent container architectures to achieve zero code repetition and maximum code reusability.
+* **Dynamic STL Containers (`std::vector`):** Utilized heap-allocated, self-resizing contiguous arrays to completely eliminate static buffer boundary limitations and Buffer Overflow zafiyet risks.
+* **Const Correctness & Pass-by-Reference:** Applied `const T&` parameter passing to prevent unnecessary memory copy operations and ensure read-only safety during container inspections.
+* **Memory Safety & RAII:** Leveraged STL container lifetime mechanics for safe, automatic scope-based memory allocation and deallocation without explicitly using `malloc`/`free` or `new`/`delete`.

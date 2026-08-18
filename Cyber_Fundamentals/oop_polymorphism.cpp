@@ -5,6 +5,7 @@
  * laying the foundation for understanding vtable mechanics in reverse engineering.
  * */
 
+ /**
 #include <iostream>
 #include <memory>
 
@@ -55,3 +56,5 @@ int main() {
 
 	return 0;
 }
+
+ * */
