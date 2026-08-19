@@ -66,3 +66,13 @@ I implemented a dynamic, generic packet buffering mechanism to analyze memory-sa
 * **Dynamic STL Containers (`std::vector`):** Utilized heap-allocated, self-resizing contiguous arrays to completely eliminate static buffer boundary limitations and Buffer Overflow zafiyet risks.
 * **Const Correctness & Pass-by-Reference:** Applied `const T&` parameter passing to prevent unnecessary memory copy operations and ensure read-only safety during container inspections.
 * **Memory Safety & RAII:** Leveraged STL container lifetime mechanics for safe, automatic scope-based memory allocation and deallocation without explicitly using `malloc`/`free` or `new`/`delete`.
+
+
+## 🎯 Step 16: Lambdas, STL Algorithms & Traffic Inspection (`lambda_algorithms.cpp`)
+I implemented a real-time network packet inspection and filtering engine leveraging C++ Lambda expressions (`[]`) and modern STL algorithms (`<algorithm>`). By utilizing inline predicates with `std::remove_if` and `std::for_each`, I demonstrated high-performance memory-safe packet filtering to instantly drop malicious signatures (such as SQL Injection and XSS payloads) from dynamic traffic streams.
+
+### 🔑 Key Concepts Covered:
+* **Modern C++ Lambdas (`[]`):** Constructed inline, anonymous function objects to execute localized filtering logic directly within algorithm scopes.
+* **STL Predicate Algorithms (`std::remove_if`):** Processed contiguous memory blocks to partition and isolate unwanted data structures based on custom logical criteria.
+* **Two-Step Erasure Idiom (`erase-remove`):** Combined logical partitioning with physical memory cleanup via `vector::erase` to prevent memory leaks and dangling elements.
+* **Functional Data Processing:** Replaced legacy manual `for` loops with type-safe, optimized `<algorithm>` constructs (`std::for_each`) to maximize code readability and performance.
