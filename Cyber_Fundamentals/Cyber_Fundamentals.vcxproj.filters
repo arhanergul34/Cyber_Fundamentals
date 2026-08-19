@@ -63,5 +63,8 @@
     <ClCompile Include="stl_templates.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="lambda_algorithms.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

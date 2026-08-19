@@ -146,6 +146,7 @@
     <ClCompile Include="function_stack.cpp" />
     <ClCompile Include="infinite_dos.cpp" />
     <ClCompile Include="integer_overflow.cpp" />
+    <ClCompile Include="lambda_algorithms.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="oop_polymorphism.cpp" />
     <ClCompile Include="param_manipulation.cpp" />
