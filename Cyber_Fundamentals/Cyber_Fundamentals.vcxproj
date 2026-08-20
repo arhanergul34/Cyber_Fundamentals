@@ -142,6 +142,7 @@
     <ClCompile Include="array_overflow.cpp" />
     <ClCompile Include="buffer_overflow.cpp" />
     <ClCompile Include="crypto_basics.cpp" />
+    <ClCompile Include="exception_handling.cpp" />
     <ClCompile Include="function_pointers.cpp" />
     <ClCompile Include="function_stack.cpp" />
     <ClCompile Include="infinite_dos.cpp" />

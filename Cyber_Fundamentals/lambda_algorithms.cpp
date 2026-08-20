@@ -5,6 +5,7 @@
  * using C++ inline lambda expressions and std::remove_if algorithms.
  * */
 
+ /**
 #include <iostream>
 #include <vector>
 #include <string>
@@ -54,3 +55,5 @@ int main() {
 
 
 }
+
+*/

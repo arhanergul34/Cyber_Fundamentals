@@ -76,3 +76,12 @@ I implemented a real-time network packet inspection and filtering engine leverag
 * **STL Predicate Algorithms (`std::remove_if`):** Processed contiguous memory blocks to partition and isolate unwanted data structures based on custom logical criteria.
 * **Two-Step Erasure Idiom (`erase-remove`):** Combined logical partitioning with physical memory cleanup via `vector::erase` to prevent memory leaks and dangling elements.
 * **Functional Data Processing:** Replaced legacy manual `for` loops with type-safe, optimized `<algorithm>` constructs (`std::for_each`) to maximize code readability and performance.
+
+## 🎯 Step 17: Security Exception Handling & Fault Tolerance (`exception_handling.cpp`)
+I implemented a robust error-handling mechanism using C++ exception handling structures (`try`, `catch`, `throw`) to design crash-resilient security software. By modeling privilege escalation attempts and unauthorized access controls via `<stdexcept>`, I demonstrated how security tools maintain operational continuity and prevent application termination during runtime anomalies.
+
+### 🔑 Key Concepts Covered:
+* **Fault-Tolerant Execution (`try`-`catch`):** Isolated high-risk security operations inside protective execution blocks to safely handle unexpected runtime failures without crashing the application process.
+* **Explicit Exception Throwing (`throw`):** Enforced authorization boundary checks and security constraints by explicitly throwing standard exceptions like `std::out_of_range` and `std::invalid_argument`.
+* **Standard Exception Library (`<stdexcept>`):** Utilized built-in C++ exception types and extracted descriptive diagnostic messages using the `e.what()` interface.
+* **Security Resilience:** Prevented application manipulation and privilege escalation risks by redirecting unauthorized calls into dedicated security alert logger blocks.
