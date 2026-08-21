@@ -5,6 +5,7 @@
  * security modules and unauthorized access handling.
  * */
 
+ /**
 #include <iostream>
 #include <string>
 #include <stdexcept> // Standard Error Library
@@ -70,3 +71,5 @@ int main() {
 
     return 0;
 }
+
+ * */

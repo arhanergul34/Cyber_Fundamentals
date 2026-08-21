@@ -85,3 +85,12 @@ I implemented a robust error-handling mechanism using C++ exception handling str
 * **Explicit Exception Throwing (`throw`):** Enforced authorization boundary checks and security constraints by explicitly throwing standard exceptions like `std::out_of_range` and `std::invalid_argument`.
 * **Standard Exception Library (`<stdexcept>`):** Utilized built-in C++ exception types and extracted descriptive diagnostic messages using the `e.what()` interface.
 * **Security Resilience:** Prevented application manipulation and privilege escalation risks by redirecting unauthorized calls into dedicated security alert logger blocks.
+
+## 🎯 Step 18: Persistent Security Logger & File I/O (`file_logger.cpp`)
+I implemented a persistent security auditing engine using C++ File I/O streams (`<fstream>`). By combining `std::ofstream` in append mode (`std::ios::app`) and `std::ifstream` line-by-line parsing mechanics (`std::getline`), I created a file-backed logging system capable of recording and auditing critical security events (e.g., SQL Injections, unauthorized logins) directly on persistent storage.
+
+### 🔑 Key Concepts Covered:
+* **Persistent File Streams (`<fstream>`):** Leveraged `std::ofstream` for structured disk logging and `std::ifstream` for forensic log auditing.
+* **Append Mode Preservation (`std::ios::app`):** Ensured data continuity by appending new audit records to the end of the log file without overwriting historical security trails.
+* **Line-by-Line File Stream Parsing:** Utilized `std::getline()` inside non-blocking `while` loops to stream, extract, and inspect log files cleanly.
+* **Defensive File Handling:** Built defensive checks using `.is_open()` to prevent application failure during missing file access or restricted directory permissions.
